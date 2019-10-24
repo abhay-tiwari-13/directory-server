@@ -1,0 +1,18 @@
+[General]
+FullMachineName=SWLX18.vxindia.veritas.com
+
+
+SuiteSpotUserID=dirsrv
+SuiteSpotGroup=dirsrv
+StrictHostCheck=false
+
+[slapd]
+ServerPort=389
+ServerIdentifier=dir
+Suffix=dc=example,dc=com
+RootDN=cn=Directory Manager
+RootDNPwd=secret
+ds_bename=exampleDB
+SlapdConfigForMC=Yes
+UseExistingMC=0
+AddSampleEntries=No
