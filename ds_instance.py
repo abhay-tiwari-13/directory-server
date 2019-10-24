@@ -39,7 +39,7 @@ def register_and_subscribe(user,passwd):
 
 def subscribe_DS():
     cmd1='subscription-manager list --available --all'
-    cmd2='grep -20 Directory'
+    cmd2='grep -50 Directory'
     out1 = subprocess.Popen(cmd1.strip().split(), stdout=subprocess.PIPE)
     out1.wait()
     out2 = subprocess.Popen(cmd2.strip().split(), stdin=out1.stdout, stdout=subprocess.PIPE)
